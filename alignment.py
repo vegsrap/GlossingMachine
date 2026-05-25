@@ -14,7 +14,7 @@ def alignment(glossed):
     total = erg_score + acc_score
 
     if total < 2:
-        return "Не определено (недостаточно маркеров)"
+        return "Не определено"
 
     erg_ratio = erg_score / total
     acc_ratio = acc_score / total
