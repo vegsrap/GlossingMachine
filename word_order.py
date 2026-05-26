@@ -1,5 +1,5 @@
-def detector(glosses):
-    slova = glosses.strip().split()
+def detector(glossed):
+    slova = glossed.strip().split()
 
     v_index = -1
     for i, token in enumerate(slova):
