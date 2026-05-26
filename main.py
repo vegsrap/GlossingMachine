@@ -16,7 +16,6 @@ def glossing_machine(glossed, tags):
             'Не определено': 'Unknown'
         }
 
-        # берём только первое слово из результата alignment
         align_key = align.split()[0]
         align = align_map.get(align_key, 'Unknown')
         return format_guess(word_order, align, morphology)
